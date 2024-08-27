@@ -30,4 +30,7 @@ k4run [--dry-run] [-v] [-n NUM_EVENTS] [-l] [--gdb] [-h] [config_files ...]
 where `-n` is the number of events to generate, and `config_files` is the config file to steer pythia (in our case `pythia.py`)\
 the `--Pythia8.PythiaInterface.pythiacard` is a option in the `pythia.py` to take a card spefifying pythia settings.
 
-
+##### Run CLD full sim
+```
+ddsim --compactFile k4geo/FCCee/CLD/compact/CLD_o2_v06/CLD_o2_v06.xml --outputFile out_sim_edm4hep.root --steeringFile CLDConfig/CLDConfig/cld_steer.py --inputFiles out.hepmc --numberOfEvents 10 --random.seed 4
+```
