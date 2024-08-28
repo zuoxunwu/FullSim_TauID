@@ -34,5 +34,5 @@ The `Zcard.cmd` can be found in the [FCC central generator config](https://githu
 
 ##### Run CLD full sim
 ```
-ddsim --compactFile k4geo/FCCee/CLD/compact/CLD_o2_v06/CLD_o2_v06.xml --outputFile out_sim_edm4hep.root --steeringFile CLDConfig/CLDConfig/cld_steer.py --inputFiles out.hepmc --numberOfEvents 10 --random.seed 4
+ddsim --compactFile CLD_o2_v06/CLD_o2_v06.xml --outputFile out_sim_edm4hep.root --steeringFile cld_steer.py --inputFiles out.hepmc --numberOfEvents 10 --random.seed 4
 ```
