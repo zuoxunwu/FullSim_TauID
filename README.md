@@ -42,10 +42,9 @@ The `k4run` command comes from the [k4Gen package](https://github.com/HEP-FCC/k4
 ```
 k4run [--dry-run] [-v] [-n NUM_EVENTS] [-l] [--gdb] [-h] [config_files ...]
 ```
-where `-n` is the number of events to generate, and `config_files` is the config file to steer pythia (in our case `pythia.py`)\
-More info on this configuration can be found in the [k4Gen repo](https://github.com/HEP-FCC/k4Gen/blob/main/k4Gen/options/pythia.py)
-the `--Pythia8.PythiaInterface.pythiacard` is a option in the `pythia.py` to take a card (`Zcard.cmd`) spefifying pythia settings.\
-The `Zcard.cmd` can be found in the [FCC central generator config](https://github.com/HEP-FCC/FCC-config/blob/winter2023/FCCee/Generator/Pythia8/p8_ee_Ztautau_ecm91.cmd)
+- `-n` is the number of events to generate,
+- `config_files` is the config file to steer pythia (in our case `pythia.py`). More info on this configuration can be found in the [k4Gen repo](https://github.com/HEP-FCC/k4Gen/blob/main/k4Gen/options/pythia.py)
+- `--Pythia8.PythiaInterface.pythiacard` is a option in the `pythia.py` to take a card (`Zcard.cmd`) spefifying pythia settings, which can be found in the [FCC central generator config](https://github.com/HEP-FCC/FCC-config/blob/winter2023/FCCee/Generator/Pythia8/p8_ee_Ztautau_ecm91.cmd)
 
 #### Run CLD full sim
 ```
