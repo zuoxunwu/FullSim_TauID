@@ -36,3 +36,8 @@ The `Zcard.cmd` can be found in the [FCC central generator config](https://githu
 ```
 ddsim --compactFile CLD_o2_v06/CLD_o2_v06.xml --outputFile out_sim_edm4hep.root --steeringFile cld_steer.py --inputFiles out.hepmc --numberOfEvents 10 --random.seed 4
 ```
+
+##### Run reconstruction
+```
+k4run CLDReconstruction.py -n 10  --inputFile out_sim_edm4hep.root --outputBasename out_reco_edm4hep
+```
